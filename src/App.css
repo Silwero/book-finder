@@ -1,0 +1,100 @@
+.App .navbar-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.App .header .navbar-header {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.header .navbar {
+  display: flex;
+}
+
+.google-btn {
+  margin-bottom: 40px;
+}
+
+.view-empty {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.error {
+  color: #ca2c2c;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-header a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  font-size: 34px;
+  text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff;
+  transition: color .3s;
+}
+
+.img-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar-header a:hover {
+  color: #fff;
+}
+
+.App .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.App .nav a.active {
+  background-color: #2d4a00 !important;
+}
+
+.header .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .nav {
+  display: flex;
+}
+
+.main-container {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .navbar-header a {
+    font-size: 20px;
+  }
+
+  .header .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .App .header .navbar-header {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .header nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header .nav {
+    justify-content: space-between;
+  }
+}

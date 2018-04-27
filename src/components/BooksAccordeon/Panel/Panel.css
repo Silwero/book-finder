@@ -1,0 +1,24 @@
+.panels-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.book-info-heaader {
+  font-size: 18px;
+  color: #fff;
+}
+
+.add-to-favorite {
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.add-to-favorite:hover {
+  color: #fff;
+}
+
+.favorite .panel-title > a {
+  background: #2d4a00;
+  color: #fff;
+}

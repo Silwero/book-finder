@@ -1,0 +1,152 @@
+.favorites h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.favorites .view-empty {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.favorites button.list-group-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all .3s;
+  position: relative;
+  outline: none;
+  padding-right: 40px;
+}
+
+.favorite-item-wrapper {
+  position: relative;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #2d4a00 !important;
+  color: #fff;
+  border-color: transparent;
+  outline: none;
+}
+
+.favorite-item-wrapper .delete {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform:  translateY(-50%);
+  color: #ca2c2c;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+.favorite-item-wrapper:hover .delete {
+  display: block;
+}
+
+.favorites button.list-group-item:hover {
+  background: #777;
+  color: #fff;
+}
+
+.favorit-book-info {
+  background: #222222;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.favorit-book-info h6 {
+  line-height: normal;
+}
+
+/* loader */
+.cssload-container{
+  position:relative;
+  min-height: 330px;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgb(204,204,204);
+  border-left-color: rgb(255,255,255);
+  border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+}
+
+.cssload-whirlpool {
+  margin: -24px 0 0 -24px;
+  height: 49px;
+  width: 49px;
+  animation: cssload-rotate 1600ms linear infinite;
+    -o-animation: cssload-rotate 1600ms linear infinite;
+    -ms-animation: cssload-rotate 1600ms linear infinite;
+    -webkit-animation: cssload-rotate 1600ms linear infinite;
+    -moz-animation: cssload-rotate 1600ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+  content: "";
+  margin: -22px 0 0 -22px;
+  height: 43px;
+  width: 43px;
+  animation: cssload-rotate 1600ms linear infinite;
+    -o-animation: cssload-rotate 1600ms linear infinite;
+    -ms-animation: cssload-rotate 1600ms linear infinite;
+    -webkit-animation: cssload-rotate 1600ms linear infinite;
+    -moz-animation: cssload-rotate 1600ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+  content: "";
+  margin: -28px 0 0 -28px;
+  height: 55px;
+  width: 55px;
+  animation: cssload-rotate 3200ms linear infinite;
+    -o-animation: cssload-rotate 3200ms linear infinite;
+    -ms-animation: cssload-rotate 3200ms linear infinite;
+    -webkit-animation: cssload-rotate 3200ms linear infinite;
+    -moz-animation: cssload-rotate 3200ms linear infinite;
+}
+
+
+
+@keyframes cssload-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes cssload-rotate {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes cssload-rotate {
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cssload-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes cssload-rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
